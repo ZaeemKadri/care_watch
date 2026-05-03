@@ -1,3 +1,4 @@
+import 'package:care_watch/widgets/common_app_bar.dart';
 import 'package:flutter/material.dart';
 
 class DevicesScreen extends StatefulWidget {
@@ -10,11 +11,9 @@ class DevicesScreen extends StatefulWidget {
 class _DevicesScreenState extends State<DevicesScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("Devices"),
-      ),
-      body: const Center(
+    return const Scaffold(
+      appBar: CommonAppBar(title: "Devices"),
+      body: Center(
         child: Text(
           "Devices Screen",
           style: TextStyle(fontSize: 18),
